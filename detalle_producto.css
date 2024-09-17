@@ -1,0 +1,327 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bord {
+    border: 1px solid rgb(253, 6, 6);
+}
+
+.header {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.div1, .div2, .div3 {
+    display: flex;
+    align-items: center;
+}
+
+.div1 {
+    height: 30%;
+    width: 15%;
+    justify-content: center;
+}
+
+.div2 {
+    height: 30%;
+    width: 25%;
+    justify-content: space-around;
+}
+
+.div3 {
+    height: 30%;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.tamaño {
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 4%;
+}
+
+.main {
+    min-height: 80vh;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 {
+    margin-left: 2%;
+    display: flex;
+    height: 10vh;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.principal {
+    flex: 1;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+}
+
+.nav1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.div4 {
+    width: 70%;
+    height: 25%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav3 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.boton {
+    width: 20%;
+    height: 8%;
+    background-color: #e91111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.a1 {
+    font-weight: bold;
+    color: #e91111;
+    font-size: 150%;
+}
+
+.contenedor-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+    margin: 2% 0;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.secundaria {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.div5 {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton2 {
+    width: 30%;
+    background: #e91111;
+    height: 70%;
+    border: none;
+    cursor: pointer;
+}
+
+.tamaño2 {
+    font-size: 150%;
+    color: #e91111;
+}
+
+.div6 {
+    height: 40%;
+    width: 100%;
+}
+
+.div7 {
+    margin-top: 5%;
+    height: 40%;
+}
+
+h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h4 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.boton3 {
+    display: block;
+    margin: auto;
+    background: #e91111;
+}
+
+/* Estilos para móviles (pantallas de menos de 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .div1, .div2, .div3 {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .section1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Aquí hacemos que las imágenes ocupen el 100% del ancho */
+    .div4 {
+        width: 100%;
+    }
+
+    img {
+        width: 100%; /* Ocupan el 100% del ancho */
+        height: auto; /* Ajustar la altura proporcionalmente */
+    }
+
+    /* Movemos nav3 debajo de las imágenes */
+    .nav2 {
+        width: 100%;
+    }
+
+    .nav3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px; /* Agregar espacio para separar del contenido anterior */
+    }
+
+    .nav1, .nav2, .nav3 {
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secundaria {
+        width: 100%;
+    }
+
+    .div5 {
+        flex-direction: column;
+    }
+
+    .boton {
+        width: 60%;
+    }
+}
+
+/* Estilos para tablets (pantallas entre 768px y 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        width: 90%;
+        max-width: 750px;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .nav1, .nav2, .nav3 {
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .contenedor-sections {
+        gap: 5%;
+    }
+
+    .secundaria {
+        width: 45%;
+    }
+
+    .boton {
+        width: 40%;
+    }
+}
+
+/* Estilos para pantallas pequeñas (375px - 430px) */
+@media screen and (min-width: 375px) and (max-width: 430px) {
+    .section1 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .nav1 {
+        max-width: 50%;
+    }
+
+    .div4 {
+        width: 100%;
+    }
+
+    .nav2 {
+        max-width: 50%;
+    }
+}
